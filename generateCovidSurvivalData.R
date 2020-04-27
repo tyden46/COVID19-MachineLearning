@@ -1,6 +1,5 @@
 library(stringr)
 coronaVirusTable=read.csv("https://raw.githubusercontent.com/beoutbreakprepared/nCoV2019/master/latest_data/latestdata.csv")
-View(coronaVirusTable[which(coronaVirusTable$chronic_disease!=""),])
 outcomeAvailable=coronaVirusTable[which(coronaVirusTable$outcome!=""),]
 goodData=outcomeAvailable[which(outcomeAvailable$sex!=""),]
 goodData=goodData[which(goodData$age!=""),]
